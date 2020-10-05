@@ -23,3 +23,19 @@ R1CL1_A_sample1#sat/R1CL1_sample1	R1CL1_sample1#sat/R1CL1_sample1\
 ...\
 R1CL1_F_sample1#sat/R1CL1_sample1 R1CL1_sample1#sat/R1CL1_sample1\
 ...
+
+
+## rename_description_rmasker.py(fasta)
+usage: <rename_description_rmasker.py -i fasta>
+
+1) Renames headers id of a fasta file as "name#sat/name" for using as a custom library for RepeatMasker
+2) Checks headers lenght (< 50)
+3) Checks possible misspellings
+
+e.g.,  
+### input:
+\>R3CL200_SP2_R1CL224_D_SP1\ 
+sequence\
+
+\>R3CL200_SP2_R1CL224_D_SP1#sat/R1CL224_SP1\
+sequence\
