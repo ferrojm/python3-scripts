@@ -10,16 +10,16 @@ variant#sat/family <tab> family#sat/family
 e.g.,
 ### input:
 
->R1CL1_A_sample1#sat/R1CL1_sample1
-sequence...
-...
->R1CL1_F_sample1#sat/R1CL1_sample1
-sequence...
-...
+>R1CL1_A_sample1#sat/R1CL1_sample1  
+sequence\
+...\
+>R1CL1_F_sample1#sat/R1CL1_sample1\
+sequence\
+...  
 
 ### output:
 
-R1CL1_A_sample1#sat/R1CL1_sample1	R1CL1_sample1#sat/R1CL1_sample1
-...
-R1CL1_F_sample1#sat/R1CL1_sample1 R1CL1_sample1#sat/R1CL1_sample1
+R1CL1_A_sample1#sat/R1CL1_sample1	R1CL1_sample1#sat/R1CL1_sample1\
+...\
+R1CL1_F_sample1#sat/R1CL1_sample1 R1CL1_sample1#sat/R1CL1_sample1\
 ...
