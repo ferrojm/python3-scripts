@@ -34,9 +34,9 @@ usage: <rename_description_rmasker.py -i fasta>
 
 e.g.,  
 ### input:
-\>R3CL200_SP2_R1CL224_D_SP1\ 
+\>R3CL200_SP2_R1CL224_D_SP1
 sequence\
 
 ### output:
-\>R3CL200_SP2_R1CL224_D_SP1#sat/R1CL224_SP1\
+\>R3CL200_SP2_R1CL224_D_SP1#sat/R1CL224_SP1
 sequence\
