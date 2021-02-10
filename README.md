@@ -5,7 +5,7 @@ Python3 scripts for working with NGS
 usage: <header_to_tab -i fasta>
 
 Extract sequences headers from RMasker custom lib and generates a tab-separated custom_patter.csv list file like:
-variant#sat/family <tab> family#sat/family
+variant#sat/family \<tab\> family#sat/family
   
 e.g.,
 ### input:
@@ -19,9 +19,9 @@ e.g.,
 
 ### output:
 
-R1CL1_A_sample1#sat/R1CL1_sample1	R1CL1_sample1#sat/R1CL1_sample1\
+R1CL1_A_sample1#sat/R1CL1_sample1 \<tab\>	R1CL1_sample1#sat/R1CL1_sample1\
 ...\
-R1CL1_F_sample1#sat/R1CL1_sample1 R1CL1_sample1#sat/R1CL1_sample1\
+R1CL1_F_sample1#sat/R1CL1_sample1 \<tab\> R1CL1_sample1#sat/R1CL1_sample1\
 ...
 
 
