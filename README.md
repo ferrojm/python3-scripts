@@ -11,10 +11,10 @@ e.g.,
 ### input:
 
 \>R1CL1_A_sample1#sat/R1CL1_sample1  
-sequence\
+-sequence-\
 ...\
 \>R1CL1_F_sample1#sat/R1CL1_sample1\
-sequence\
+-sequence-\
 ...  
 
 ### output:
@@ -34,9 +34,9 @@ usage: <rename_description_rmasker.py -i fasta>
 
 e.g.,  
 ### input:
-\>R3CL200_SP2_R1CL224_D_SP1
-sequence\
+>R3CL200_SP2_R1CL224_D_SP1\
+-sequence-
 
 ### output:
-\>R3CL200_SP2_R1CL224_D_SP1#sat/R1CL224_SP1
-sequence\
+>R3CL200_SP2_R1CL224_D_SP1#sat/R1CL224_SP1\
+-sequence-
