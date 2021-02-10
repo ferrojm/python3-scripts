@@ -4,7 +4,7 @@ Python3 scripts for working with NGS
 ## header_to_tab(fasta)
 usage: <header_to_tab -i fasta>
 
-Extract sequences headers from RMasker custom lib and generates a tab-separated custom_patter.csv list file like:
+For SatMiner protocol. Extract sequences headers from RMasker custom lib and generates a tab-separated custom_pattern.csv list file like:
 variant#sat/family \<tab\> family#sat/family
   
 e.g.,
