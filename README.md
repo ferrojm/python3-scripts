@@ -1,42 +1,32 @@
 # Python3-scripts
-Python3 scripts for working with NGS
+general python scripts for working with NGS data
 
-## header_to_tab(fasta)
-usage: <header_to_tab -i fasta>
-
-For SatMiner protocol. Extract sequences headers from RMasker custom lib and generates a tab-separated custom_pattern.csv list file like:
-variant#sat/family \<tab\> family#sat/family
+<code>pick_fasta_lenght.py -f <file.fasta> -l <int_length> </code>- filters sequences keeping those above a desired length
   
-e.g.,
-### input:
+<code>rename_header_rexp.py -i <file.fasta> </code>- Rename headers id of a fasta file as "name#sat/name" for using as a custom library for RepeatExplorer (Rmasker), also checks headers lenght (< 50) and possible misspellings
 
-\>R1CL1_A_sample1#sat/R1CL1_sample1  
--sequence-\
-...\
-\>R1CL1_F_sample1#sat/R1CL1_sample1\
--sequence-\
-...  
+<code>pcr_main.py </code>  - pcr in silico from a fasta file (uses seqkit)
 
-### output:
+<code>count_bases.py </code> - counts the number of bases in all the sequences of a fasta file
 
-R1CL1_A_sample1#sat/R1CL1_sample1 \<tab\>	R1CL1_sample1#sat/R1CL1_sample1\
-...\
-R1CL1_F_sample1#sat/R1CL1_sample1 \<tab\> R1CL1_sample1#sat/R1CL1_sample1\
-...
+<code>header_to_tab.py -i <file.fasta> </code> - For SatMiner protocol. Extract the sequences headers from a RMasker custom lib and generates a tab-separated custom_pattern.tsv list file
+    
+    e.g.,
+    ## input:
+
+    \>R1CL1_A_sample1#sat/R1CL1_sample1  
+    -sequence-\
+    ...\
+    \>R1CL1_F_sample1#sat/R1CL1_sample1\
+    -sequence-\
+    ...  
+
+    ## output:
+    
+    R1CL1_A_sample1#sat/R1CL1_sample1  R1CL1_sample1#sat/R1CL1_sample1\
+    ...\
+    R1CL1_F_sample1#sat/R1CL1_sample1  R1CL1_sample1#sat/R1CL1_sample1\
+    ...
 
 
-## rename_description_rmasker.py(fasta)
-usage: <rename_description_rmasker.py -i fasta>
 
-1) Renames headers id of a fasta file as "name#sat/name" for using as a custom library for RepeatMasker
-2) Checks headers lenght (< 50)
-3) Checks possible misspellings
-
-e.g.,  
-### input:
-\>R3CL200_SP2_R1CL224_D_SP1\
--sequence-
-
-### output:
-\>R3CL200_SP2_R1CL224_D_SP1#sat/R1CL224_SP1\
--sequence-
