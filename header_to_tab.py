@@ -18,7 +18,7 @@ def header_to_tab(original_file):
 		
 
 if __name__ == "__main__":
-	parser = argparse.ArgumentParser(description = "<header_to_tab -i fasta>: extract sequences headers from RMasker lib and generates a tab separated record like variant#sat/family <tab> family#sat/family")
+	parser = argparse.ArgumentParser(description = "<header_to_tab -i fasta> extract sequences headers from RMasker lib and generates a tab separated record like var#sat/fam <tab> fam#sat/fam")
 	parser.add_argument("-i", "--input", type = str, required = True, help = "a fasta input")
 	args = parser.parse_args()
 	original_file = args.input
