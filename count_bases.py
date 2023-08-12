@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#stolen from @mylena-s XD
+#borrowed from @mylena-s XDXD
 
 from Bio import SeqIO
 import sys
