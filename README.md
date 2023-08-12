@@ -9,5 +9,6 @@ general python scripts and tools for working with NGS data
 
 <code>pcr_main.py -t <target.fasta> -f <forward_primer_string> -r <reverse_primer_string> -m <modes= pcr, mpcr, N> </code>- PCR in silico from a template using seqkit, extract a PCR product from one (pcr mode) or multiple files (mpcr mode), also search an exact match in a target and replace nucleotides with N (N mode)
 
-<code>count_bases.py </code> - counts the number of bases in all the sequences of a fasta file
+<code>count_bases.py </code> - counts the number of bases in all the sequences of a fasta file. made by: @mylena-s 
+
 
