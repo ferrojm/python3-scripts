@@ -11,24 +11,3 @@ general python scripts and tools for working with NGS data
 
 <code>count_bases.py </code> - counts the number of bases in all the sequences of a fasta file
 
-<code>header_to_tab.py -i <file.fasta> </code> - For SatMiner protocol. Extract the sequences headers from a RMasker custom lib and generates a tab-separated custom_pattern.tsv list file
-    
-    e.g.,
-    ## input:
-
-    \>R1CL1_A_sample1#sat/R1CL1_sample1  
-    -sequence-\
-    ...\
-    \>R1CL1_F_sample1#sat/R1CL1_sample1\
-    -sequence-\
-    ...  
-
-    ## output:
-    
-    R1CL1_A_sample1#sat/R1CL1_sample1  R1CL1_sample1#sat/R1CL1_sample1\
-    ...\
-    R1CL1_F_sample1#sat/R1CL1_sample1  R1CL1_sample1#sat/R1CL1_sample1\
-    ...
-
-
-
