@@ -1,6 +1,7 @@
 # Python3-scripts
 general python scripts and tools for working with NGS data
 
+<code>AnalyzeLandscapes_v2.py</code>-A python3 script for plotting repetitive landscapes using a RepeatMasker divsum output (AnalyzeLandscapes_v2.py -h for options).
 
 <code>pick_fasta_lenght.py -f <file.fasta> -l <int_length> </code>- filters sequences keeping those above a desired length
   
