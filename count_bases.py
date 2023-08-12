@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+#stolen from @mylena-s XD
 
 from Bio import SeqIO
 import sys
