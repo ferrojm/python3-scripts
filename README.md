@@ -1,5 +1,8 @@
 # Python3-scripts
-general python scripts for working with NGS data
+general python scripts and tools for working with NGS data
+
+
+<code>pcr_main.py -t <target.fasta> -f <forward_primer_string> -r <reverse_primer_string> -m -r <modes= pcr, mpcr, N> </code>- PCR in silico using seqkit, extract a PCR product from one (pcr mode) or multiple files (mpcr mode), also search an exact match in a target and replace nucleotides with N (N mode)
 
 <code>pick_fasta_lenght.py -f <file.fasta> -l <int_length> </code>- filters sequences keeping those above a desired length
   
