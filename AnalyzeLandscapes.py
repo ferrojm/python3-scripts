@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #version1 23/07/21
-#version2 13/03/23 #refactorized
+#version2 13/03/23 
 
 import csv
 import pandas as pd
