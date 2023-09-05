@@ -5,7 +5,7 @@ general python scripts and tools for working with NGS data
 
 <code>pick_fasta_lenght.py -f <file.fasta> -l <int_length> </code>- filters sequences keeping those above a desired length
 
-<code>read_reads.py -i <input> -t <type-fasta/fastq> </code>- uses a fasta/fastq file as input and plot a histogram of reads length distribution
+<code>read_reads.py -i <input.fasta/fastq> -t <type of file: fasta/fastq> </code>- uses a fasta/fastq file as input and plot a histogram of reads length distribution
 
 <code>rename_header_rexp.py -i <file.fasta> </code>- Rename headers id of a fasta file as "name#sat/name" for using as a custom library for RepeatExplorer (Rmasker), also checks headers lenght (< 50) and possible misspellings
 
