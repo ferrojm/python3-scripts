@@ -1,0 +1,20 @@
+#!/bin/bash
+echo "this script extract contigs from repeatexplorer contigs.fa file using seqtk"
+echo "usage extract_contigs_RExp.sh CLXC contigs.fa , e.g. use CL1C for CL1 or CL45C for CL45"
+if [ "$1" = "" ]
+then
+  echo "missing argument"
+  exit
+fi
+
+grep $1 $2 | sed 's/\s.*//' | sed 's/>//' > tmp
+if grep -q "_" tmp; then
+  echo 'satellite!'
+else
+  echo 'not satellite!'
+  sed -i 's/_.*//' tmp
+fi
+name=$(head -n 1 tmp | grep -Eo 'CL[0-9]+')
+seqtk subseq $2 tmp > $name.fa
+rm tmp
+echo 'ready'
