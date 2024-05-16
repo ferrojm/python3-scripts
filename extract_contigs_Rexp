@@ -1,13 +1,13 @@
 #!/bin/bash
 echo "this script extract contigs from repeatexplorer contigs.fa file using seqtk"
-echo "usage extract_contigs_RExp.sh CLXC contigs.fa , e.g. use CL1C for CL1 or CL45C for CL45"
+echo "usage extract_contigs_RExp.sh CLN contigs.fa , where N is the cluester number"
 if [ "$1" = "" ]
 then
   echo "missing argument"
   exit
 fi
 
-grep $1 $2 | sed 's/\s.*//' | sed 's/>//' > tmp
+grep $1C $2 | sed 's/\s.*//' | sed 's/>//' > tmp
 if grep -q "_" tmp; then
   echo 'satellite!'
 else
