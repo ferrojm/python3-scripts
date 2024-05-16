@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "this script extract contigs from repeatexplorer contigs.fa file using seqtk"
+echo "extract contigs from repeatexplorer contigs.fa file using seqtk"
 echo "usage extract_contigs_RExp.sh CLN contigs.fa , where N is the cluester number"
 if [ "$1" = "" ]
 then
