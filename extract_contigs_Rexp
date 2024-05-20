@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "extract contigs from repeatexplorer contigs.fa file using seqtk"
-echo "usage extract_contigs_RExp.sh CLN contigs.fa , where N is the cluester number"
+echo "this script extract contigs from repeatexplorer contigs.fa file using seqtk"
+echo "usage extract_contigs_RExp.sh CLN contigs.fa , where N is the cluster number"
 if [ "$1" = "" ]
 then
   echo "missing argument"
@@ -9,9 +9,9 @@ fi
 
 grep $1C $2 | sed 's/\s.*//' | sed 's/>//' > tmp
 if grep -q "_" tmp; then
-  echo 'satellite!'
+  echo "${1} is a satellite!"
 else
-  echo 'not satellite!'
+  echo "${1} is not a satellite!"
   sed -i 's/_.*//' tmp
 fi
 name=$(head -n 1 tmp | grep -Eo 'CL[0-9]+')
