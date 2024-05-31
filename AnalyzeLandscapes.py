@@ -80,7 +80,7 @@ def landscapes_species_plotter(df, lolim_sat, uplim_sat, plot_name):
     df = df.loc[:50, df.columns[lolim_sat:uplim_sat]]
     
     #plot by using % df from csv_percentage_sorter
-    plot = df.plot.bar(stacked = True, figsize = (25,20), cmap = color_map, fontsize = 40, rot = 45)
+    plot = df.plot.bar(stacked = True, figsize = (25,20), cmap = color_map, fontsize = 40, rot = 45, width = 0.9)
     plot.legend(loc=[1.01,0.01],ncol=4)
     #move x labels to the top
     plot.xaxis.tick_top()
