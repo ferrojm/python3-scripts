@@ -1,7 +1,7 @@
 # Python3-scripts
 general python scripts and tools for working with NGS data
 
-<code>AnalyzeLandscapes.py</code>-plot repetitive landscapes using a RepeatMasker divsum output (AnalyzeLandscapes.py -h to see all options)
+<code>AnalyzeLandscapes.py</code>-plot repetitive landscapes using a RepeatMasker divsum output (AnalyzeLandscapes.py -h to see all options). IMPORTANT: use python 3.6 or earlier and pandas v.1.1 or earlier (e.g., for creating a miniforge3 environment # mamba create -n alandscapes -c bioconda python=3.6 pandas=1.1 biopython numpy matplotlib)
 
 <code>extract_contigs_RExp.py CLN contigs.fa </code>- extract specific contigs from repeatexplorer contigs.fa file using seqtk. Useful for loops using a list of clusters; eg. <code> cat list | while read line; do extract_contigs_Rexp.py $line contigs.fa; done </code>
 
