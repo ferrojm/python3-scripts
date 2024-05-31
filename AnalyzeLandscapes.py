@@ -10,11 +10,14 @@ import time
 from matplotlib import cm
 import numpy as np
 
-#PYTHON3 MODULES TO RUN (NOT DEFAULT INSTALLED)
-    #pandas >> pip3 install pandas
-    #matplotlib >> pip3 install matplotlib
-    
-    
+###################
+####IMPORTANT######
+'''it is necessary to use python 3.6 or earlier and pandas v.1.1 or earlier
+so it is recomended to create an anaconda environment 
+e.g., mamba create -n alandscapes -c bioconda python=3.6 pandas=1.1 biopython numpy matplotlib'''
+###################
+###################
+
 #DIVSUM_SPLITER. searches for the 'Div' string and creates a new table (file.csv)
 
 def divsum_splitter(file): 
