@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#author: juan martin ferro
-
 if [ "$1" = "" ]
 then
   echo "This script filters a gtf file by transcript IDs associated to a list of gene IDs"
