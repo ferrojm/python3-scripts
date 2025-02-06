@@ -619,6 +619,4 @@ if __name__ == "__main__":
 ##final_ab_kimura(df_ab, df_k, ab_k_filename = 'abundance_kimura.csv'):
 
 
-####Falta agregar ploter mylena de n sats per page
-
 
